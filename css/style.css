@@ -1,0 +1,58 @@
+/* Copyright © 2022 sajith-dilshan. All Rights Reserved.
+ * This project is licensed under the MIT License.
+ * Please find the license file in the root directory.
+ *
+ * style.css
+ *
+ * Author: sajith dilshan <sajithd784@gmail.com>
+ */
+
+
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    overflow: hidden;
+}
+
+.hide{
+    opacity: 0 !important;
+}
+
+.pointer{
+    position: absolute;
+    background-color: rgb(243, 23, 23);
+    opacity: 0.5;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    transition: opacity 500ms ease;
+    animation-name: wave;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    z-index: 9999999;
+    /* box-shadow: 0 0 0 30px rgb(255,0,0, .5); */
+}
+
+@keyframes wave{
+    0% {
+        transform: translate(-50%, -50%) scale(.95);
+        box-shadow: 0 0 0 0 transparent;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 0 20px rgba(250, 95, 5, 0.5);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(.95);
+        box-shadow: 0 0 0 30px rgba(227, 243, 3, 0.26);
+    }
+}
+
+     
