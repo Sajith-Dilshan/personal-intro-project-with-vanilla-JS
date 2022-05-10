@@ -1,7 +1,7 @@
 # personal intro project with vanilla JS
 
 
-
+This project was developed using JavaScript, HTML, and CSS.that project uses the widely used DOM API provided by the WEB API and vanilla javascript.
 
 
 ##How to use this repo?
@@ -12,7 +12,9 @@
 
 * Build and Run!
 
-
+<hr>
+<h1 style="color:red"><a href="https://sajith-dilshan.github.io/personal-intro-project-with-vanilla-JS/">CLICK to LIVE</a></h1>
+<hr>
 
 
 ## License
