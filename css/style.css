@@ -1,19 +1,8 @@
-/* Copyright © 2022 sajith-dilshan. All Rights Reserved.
- * This project is licensed under the MIT License.
- * Please find the license file in the root directory.
- *
- * style.css
- *
- * Author: sajith dilshan <sajithd784@gmail.com>
- */
-
-
- *{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 
 body{
     overflow: hidden;
@@ -25,7 +14,7 @@ body{
 
 .pointer{
     position: absolute;
-    background-color: rgb(243, 23, 23);
+    background-color: lightgray;
     opacity: 0.5;
     width: 80px;
     height: 80px;
@@ -47,12 +36,53 @@ body{
     }
     50% {
         transform: translate(-50%, -50%) scale(1);
-        box-shadow: 0 0 0 20px rgba(250, 95, 5, 0.5);
+        box-shadow: 0 0 0 20px rgba(0,0,255, .5);
     }
     100% {
         transform: translate(-50%, -50%) scale(.95);
-        box-shadow: 0 0 0 30px rgba(227, 243, 3, 0.26);
+        box-shadow: 0 0 0 20px rgba(255,0,0, .5);
     }
 }
 
-     
+
+#stage{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+    background-color: #34d8eb;
+    border-radius: 10px;
+    font-size: calc(1vw * 1.7 * 4);
+    font-family: Ubuntu, sans-serif;
+}
+
+#stage:after{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: calc(1vw * 1.7 * 4);
+    vertical-align: text-top;
+    margin-left: 5px;
+    background-color: black;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
