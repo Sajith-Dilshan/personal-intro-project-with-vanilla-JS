@@ -3,7 +3,7 @@ var texts = [
     'Full stack software engineer',
     'Tech enthusiast'
 ];
-var startingTime = null;
+var startingTimee = null;
 var i = 0;
 var j = 0;
 var k = 0;
@@ -12,11 +12,11 @@ var reverse = false;
 
 function animateText(stamp){
 
-    if (!startingTime){
-        startingTime = stamp;
+    if (!startingTimee){
+        startingTimee = stamp;
     }
 
-    var interval = stamp - startingTime;
+    var interval = stamp - startingTimee;
 
     if (interval >= 70 && reverse){
         var text = texts[j];
@@ -31,7 +31,7 @@ function animateText(stamp){
     }
 
     if (interval >= 150 && !reverse){
-        startingTime = stamp;
+        startingTimee = stamp;
 
         var text = texts[j];
         elmStage.innerText = text.substring(0, i++);
