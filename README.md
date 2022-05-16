@@ -6,7 +6,7 @@ This project was developed using JavaScript, HTML, and CSS.that project uses the
 
 ##How to use this repo?
 
-* Clone the repository first 'git clone'
+* Clone the repository first 'git clone' ``https://github.com/Sajith-Dilshan/personal-intro-project-with-vanilla-JS.git``
 
 * Once cloned,you can open the repository from any prefered code editer
 
